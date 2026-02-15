@@ -1,0 +1,95 @@
+:root {
+  --bg: #0b0f14;
+  --card: #111827;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --line: #1f2937;
+  --accent: #60a5fa;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container { max-width: 920px; margin: 0 auto; padding: 24px; }
+.nav {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 0; border-bottom: 1px solid var(--line); margin-bottom: 28px;
+}
+.brand { font-weight: 700; color: var(--text); }
+.nav-links a { margin-left: 16px; color: var(--muted); }
+.nav-links a:hover { color: var(--text); text-decoration: none; }
+
+.hero {
+  padding: 18px 0 10px 0;
+}
+.hero h1 { margin: 0 0 6px 0; font-size: 34px; letter-spacing: -0.02em; }
+.hero p { margin: 0 0 14px 0; color: var(--muted); }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  margin-top: 16px;
+}
+@media (min-width: 760px) {
+  .grid { grid-template-columns: 1fr 1fr; }
+}
+
+.card {
+  background: linear-gradient(180deg, rgba(17,24,39,0.95), rgba(17,24,39,0.85));
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.card h3 { margin: 0 0 8px 0; }
+.card p { margin: 0 0 10px 0; color: var(--muted); }
+
+.pill {
+  display: inline-block;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  margin: 4px 6px 0 0;
+}
+
+.actions a {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 22px 0;
+}
+
+.subtitle { color: var(--muted); margin-top: 6px; }
+.meta { margin-top: 10px; }
+.links { margin-top: 12px; }
+.link {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  color: var(--text);
+  background: rgba(255,255,255,0.02);
+}
+.link:hover { text-decoration: none; border-color: rgba(96,165,250,0.6); }
+
+.footer { margin-top: 36px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; }
+.content h2 { margin-top: 26px; }
+.content ul { color: var(--muted); }
+.content strong { color: var(--text); }

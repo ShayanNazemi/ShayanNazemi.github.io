@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <div class="container">
+      {% include nav.html %}
+      <main class="content">
+        {{ content }}
+      </main>
+      <footer class="footer">
+        <div>© {{ "now" | date: "%Y" }} {{ site.title }}</div>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+title: "Your Name"
+description: "Quantitative Research • Market Microstructure • Systematic Trading"
+url: "https://YOUR_USERNAME.github.io"
+markdown: kramdown
+
+# Build settings
+theme: null
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Collections for project pages
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Defaults for front matter
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"

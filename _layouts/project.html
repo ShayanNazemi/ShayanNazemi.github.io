@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<article class="project">
+  <header class="project-header">
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}<p class="subtitle">{{ page.subtitle }}</p>{% endif %}
+
+    <div class="meta">
+      {% if page.role %}<span class="pill">{{ page.role }}</span>{% endif %}
+      {% if page.stack %}
+        {% for item in page.stack %}
+          <span class="pill">{{ item }}</span>
+        {% endfor %}
+      {% endif %}
+      {% if page.status %}<span class="pill">{{ page.status }}</span>{% endif %}
+    </div>
+
+    {% if page.links %}
+      <div class="links">
+        {% for link in page.links %}
+          <a class="link" href="{{ link.href }}" target="_blank" rel="noopener">{{ link.label }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </header>
+
+  <section class="project-body">
+    {{ content }}
+  </section>
+</article>
