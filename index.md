@@ -4,14 +4,14 @@ title: Home
 ---
 
 <div class="hero">
-  <h1>Your Name</h1>
+  <h1>Shayan Nazemi</h1>
   <p>Quantitative Research • Market Microstructure • Systematic Trading</p>
 
   <div class="actions">
-    <a href="/assets/Your_Name_Resume.pdf">Resume (PDF)</a>
-    <a href="https://github.com/YOUR_USERNAME" target="_blank" rel="noopener">GitHub</a>
-    <a href="mailto:you@email.com">Email</a>
-    <a href="https://www.linkedin.com/in/YOUR_HANDLE" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="/assets/cv.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+    <a href="https://github.com/ShayanNazemi" target="_blank" rel="noopener">GitHub</a>
+    <a href="mailto:nazemi.shayan@gmail.com">Email</a>
+    <a href="https://www.linkedin.com/in/shayan-nazemi/" target="_blank" rel="noopener">LinkedIn</a>
   </div>
 </div>
 
