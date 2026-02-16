@@ -1,5 +1,5 @@
 ---
-title: "Crypto Arbitrage Research & Execution Engine"
+title: "Crypto Arbitrage"
 subtitle: "Cross-venue arbitrage under execution uncertainty"
 summary: "A microstructure-aware cross-exchange arbitrage system with depth-aware order placement, risk controls, and backtest/replay."
 featured: true

@@ -11,54 +11,44 @@ title: Home
 
   <div class="hero-right">
     <h1>Shayan Nazemi</h1>
-
     <div class="actions">
       <a href="{{ '/assets/cv.pdf' | relative_url }}" target="_blank" rel="noopener">
         <i data-lucide="file-text"></i>
         Resume
       </a>
-
       <a href="https://github.com/ShayanNazemi" target="_blank" rel="noopener">
         <i data-lucide="github"></i>
         GitHub
       </a>
-
       <a href="mailto:nazemi.shayan@gmail.com">
         <i data-lucide="mail"></i>
         Email
       </a>
-
       <a href="https://www.linkedin.com/in/shayan-nazemi/" target="_blank" rel="noopener">
         <i data-lucide="linkedin"></i>
         LinkedIn
       </a>
     </div>
     <p>
-      I am a PhD candidate in Data Science at HEC Montréal (Decision Sciences), 
-      specializing in statistical modeling and machine learning for complex, 
-      high-dimensional systems.
+      I am a PhD candidate in Data Science in the Department of Decision Sciences at HEC Montréal, 
+      specializing in statistical modeling and machine learning for complex, high-dimensional systems.
     </p>
-
     <p>
-      My research focuses on Bayesian inference and hierarchical modeling, 
-      with particular emphasis on skewed and heavy-tailed distributions in 
-      spatio-temporal settings. I am particularly interested in market 
-      microstructure, high-frequency trading, execution modeling, and 
-      financial pricing.
+      My current research interests focus on the application of statistical modeling to financial markets, particularly in:
+    </p>
+    <ul>
+      <li>Market microstructure</li>
+      <li>High-frequency trading</li>
+      <li>Execution modeling</li>
+      <li>Financial pricing</li>
+    </ul>
+    <p>
+      I am currently seeking opportunities in quantitative research and quantitative trading roles.
     </p>
   </div>
-
 </div>
 
-
 <hr />
-
-## Focus
-
-- Depth-aware execution & order placement
-- Slippage / fee modeling, fill probability
-- Risk controls (inventory, limits, kill-switches)
-- Backtesting & replay pipelines
 
 ## Featured projects
 

@@ -168,7 +168,7 @@ hr {
   display: grid;
   grid-template-columns: 220px 1fr;
   gap: 32px;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 10px;
 }
 
@@ -178,8 +178,7 @@ hr {
 }
 
 .profile-pic {
-  width: 200px;
-  /* height: 200px; */
+  width: 220px;
   object-fit: cover;
   border-radius: 18px;
   border: 1px solid var(--line);
