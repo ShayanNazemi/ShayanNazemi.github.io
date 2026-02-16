@@ -6,14 +6,14 @@ title: Home
 <div class="hero two-col">
 
   <div class="hero-left">
-    <img src="/assets/profile.jpg" alt="Shayan Nazemi" class="profile-pic">
+    <img src="{{ '/assets/profile.jpg' | relative_url }}" alt="Shayan Nazemi" class="profile-pic">
   </div>
 
   <div class="hero-right">
     <h1>Shayan Nazemi</h1>
 
     <div class="actions">
-      <a href="/assets/cv.pdf" target="_blank" rel="noopener">
+      <a href="{{ '/assets/cv.pdf' | relative_url }}" target="_blank" rel="noopener">
         <i data-lucide="file-text"></i>
         Resume
       </a>
@@ -76,47 +76,45 @@ title: Home
   </div>
 {% endfor %}
 </div>
+<p style="margin-top:10px;">
+  <a href="{{ '/projects/' | relative_url }}">View all projects</a>
+</p>
 
 <hr />
-
-## Publications
+## Featured publications
 
 <div class="pub-list">
-
+{% assign featured_pubs = site.publications | where: "featured", true | sort: "feature_order" %}
+{% for p in featured_pubs %}
   <div class="pub">
     <div class="pub-top">
       <div>
-        <h3 class="pub-title">A Bayesian Framework for Post-disruption Travel Time Prediction in Metro Networks</h3>
-        <p class="pub-authors">
-          Shayan Nazemi, Aurélie Labbe, Stefan Steiner, Martin Trépanier, Léo R. Belzile
-        </p>
-        <p class="pub-venue">Manuscript in preparation</p>
+        <h3 class="pub-title">
+          <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+        </h3>
+        {% if p.authors %}<p class="pub-authors">{{ p.authors }}</p>{% endif %}
+        {% if p.venue %}<p class="pub-venue">{{ p.venue }}</p>{% endif %}
       </div>
 
-      <div class="badge" title="Status">
-        <span class="badge-dot"></span>
-        In preparation
+      {% if p.status %}
+        <div class="badge"><span class="badge-dot"></span>{{ p.status }}</div>
+      {% endif %}
+    </div>
+
+    {% if p.tags %}
+      <div class="pub-meta">
+        {% for tag in p.tags %}
+          <span class="chip">{{ tag }}</span>
+        {% endfor %}
       </div>
-    </div>
-
-    <div class="pub-meta">
-      <span class="chip">Bayesian Statistics</span>
-      <span class="chip">Spatiotemporal Statistics</span>
-      <span class="chip">Metro Systems</span>
-      <span class="chip">Transportation Networks</span>
-    </div>
-
-    <!-- Optional: add links when you have them -->
-    <!--
-    <div class="pub-links" style="margin-top:12px;">
-      <a href="#" target="_blank" rel="noopener">PDF</a>
-      <a href="#" target="_blank" rel="noopener">arXiv</a>
-      <a href="#" target="_blank" rel="noopener">Code (private)</a>
-    </div>
-    -->
+    {% endif %}
   </div>
-
+{% endfor %}
 </div>
+
+<p style="margin-top:10px;">
+  <a href="{{ '/publications/' | relative_url }}">View all publications</a>
+</p>
 
 
 ## Notes on confidentiality
