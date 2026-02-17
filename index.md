@@ -12,10 +12,6 @@ title: Home
   <div class="hero-right">
     <h1>Shayan Nazemi</h1>
     <div class="actions">
-      <a href="{{ '/assets/cv.pdf' | relative_url }}" target="_blank" rel="noopener">
-        <i data-lucide="file-text"></i>
-        Resume
-      </a>
       <a href="https://github.com/ShayanNazemi" target="_blank" rel="noopener">
         <i data-lucide="github"></i>
         GitHub
