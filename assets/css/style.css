@@ -243,3 +243,11 @@ hr {
     height: 160px;
   }
 }
+
+.abstract {
+    text-align: justify;
+}
+
+.author-list {
+  font-style: italic;
+}
