@@ -2,8 +2,8 @@
 layout: default
 title: "A Bayesian Framework for Post-disruption Travel Time Prediction in Metro Networks"
 authors: "Shayan Nazemi, Aurélie Labbe, Stefan Steiner, Pratheepa Jeganathan, Martin Trépanier, Léo R. Belzile"
-venue: "Manuscript in preparation"
-status: "In preparation"
+venue: "Manuscript submitted to Transportation Research: Part B"
+status: "Submitted"
 tags: ["Bayesian Statistics", "Spatiotemporal Statistics", "Metro Systems", "Transportation Networks"]
 featured: true
 feature_order: 1
@@ -17,6 +17,13 @@ links:
 <p class="author-list">
 Shayan Nazemi, Aurélie Labbe, Stefan Steiner, Pratheepa Jeganathan, Martin Trépanier, Léo R. Belzile
 </p>
+
+<div class="actions">
+      <a href="https://arxiv.org/abs/2602.19952" target="_blank" rel="noopener">
+        <i data-lucide="book"></i>
+        Preprint (arXiv)
+      </a>
+</div>
 ## Abstract
 
 <p class="abstract">
